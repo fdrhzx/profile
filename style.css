@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+:root{
+	 --black:black;
+	 --gray:#3F3F3F;
+}
+@font-face{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	src: url("images/fonts/Inter-Bold.ttf") format('truetype');
+	font-weight: 400 600 700;
+	transition: all ease_in_out 0 3s;
+}
+html,body{
+	height: 100%;
+	max-width: 1440px;
+	min-width: 375px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #141313;
+	color: white;
+	font-size: 14px;
+	width: 100vw;
+	height: 100vh;
+}
+.container{
+	max-width: 19rem;
+	width: 100%;
+	margin: 0;
+	color: rgba(35,35,35,1.00);
+}
+.card_section{
+	background-color: #131313;
+	border: none;
+    border-radius: 10px;
+	box-shadow: 0 0 0  #131313;
+	padding: 2.5rem 2rem;
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5rem;
+}
+.card_img{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 100px;
+ border-radius: 200px 200px 200px 200px;
+}
+
+.card_title{
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family:"aguafina-script";
+	color: white;
+}
+.address{
+	font-weight: 600;
+	font-size:large;
+	color: #36F73A;
+	text-align: center;
+}
+.card_description{
+     font-weight: 400;
+	font-size: large;
+	color:rgba(198,196,158,1.00);
+	margin: 0.75rem;
+	white-space: nowrap;
+	text-align: center;
+}
+.nav_link{
+	display: flex;
+	flex-direction: column;
+}
+.card_butten{
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	width: 300px;
+  height: 30px;
+  background-color:#2E2B2B;
+  border: none;
+  border-radius: 3px;
+	margin: auto 6px 6px;
+}
+.card_butten:hover{
+	background-color: #DCD62E;
+	outline: 2px solid #DCD62E;
+	outline-offset: 2px;
+}
+@media(min-width:1024px){
+	.container{
+		max-width: 20rem;
+	}
+}
